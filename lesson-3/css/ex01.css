@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+main {
+    margin-top: 54px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+
+/* header CSS */
+header {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 64px;
+    margin-left: 54px;
+}
+
+/* contact-section CSS */
+#contact-section {
+    width: 1200px;
+    height: 554px;
+    margin-left: 54px;
+}
+
+#contact h3 {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* contact-info CSS */
+#contact-info {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+#contact-info p {
+    font-weight: 300;
+    margin-bottom: 38px;
+    color: #b6b6b6;
+}
+
+.contact-icons {
+    width: 24px;
+    display: inline;
+}
+
+/* form css */
+#form-contact {
+    display: inline-block;
+    width: 60%;
+}
+
+#form-contact input {
+    width: 100%;
+    height: 38px;
+    margin-bottom: 16px;
+    border: 1px solid #b6b6b6;
+}
+
+#form-contact textarea {
+    width: 100%;
+    resize: none;
+    margin-bottom: 10px;
+    border: 1px solid #b6b6b6;
+}
+
+#form-contact button {
+    width: 128px;
+    height: 38px;
+    border: 0;
+    background-color: #0cb8b6;
+    color: white;
+    border-radius: 3px;
+}
+
+#form-contact button:hover {
+    background-color: #107c7a;
+    color: white;
+}
