@@ -18,6 +18,16 @@ header {
     margin-left: 54px;
 }
 
+header::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 2px;
+    background-color: orange;
+    margin-top: 12px;
+    margin-left: 3px;
+}
+
 /* contact-section CSS */
 #contact-section {
     width: 1200px;
