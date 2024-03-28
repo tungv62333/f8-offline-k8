@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    border: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* best seller section CSS */
+.best-seller-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+
+/* Header CSS */
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.best-seller-section header h2 {
+    font-family: "Playfair Display";
+    font-size: 42px;
+    margin-bottom: 24px;
+}
+
+.best-seller-selected {
+    display: none;
+}
+
+/* Nav CSS */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+.nav-list li {
+    background-color: #f5f5f5;
+    font-size: 14px;
+    color: #797878;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 2px;
+}
+
+.nav-list li label {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 50px;
+}
+
+/* Nav Select CSS */
+/* skincare */
+#skincare:checked ~ header .nav-list li label[for="skincare"] {
+    background-color: #29388e;
+    color: #fff;
+}
+
+#skincare:checked ~ .best-seller-list .skincare-items {
+    display: flex;
+}
+
+/* haircare */
+#haircare:checked ~ header .nav-list li label[for="haircare"] {
+    background-color: #29388e;
+    color: #fff;
+}
+#haircare:checked ~ .best-seller-list .haircare-items {
+    display: flex;
+}
+
+/* cosmetics */
+#cosmetics:checked ~ header .nav-list li label[for="cosmetics"] {
+    background-color: #29388e;
+    color: #fff;
+}
+#cosmetics:checked ~ .best-seller-list .cosmetics-items {
+    display: flex;
+}
+
+/* fragrance */
+#fragrance:checked ~ header .nav-list li label[for="fragrance"] {
+    background-color: #29388e;
+    color: #fff;
+}
+#fragrance:checked ~ .best-seller-list .fragrance-items {
+    display: flex;
+}
+
+/* makeup */
+#makeup:checked ~ header .nav-list li label[for="makeup"] {
+    background-color: #29388e;
+    color: #fff;
+}
+#makeup:checked ~ .best-seller-list .makeup-items {
+    display: flex;
+}
+
+/* Best Seller Content CSS */
+.best-seller-list {
+    width: 1040px;
+    height: 920px;
+}
+
+.skincare-items,
+.haircare-items,
+.cosmetics-items,
+.fragrance-items,
+.makeup-items,
+.action-box {
+    display: none;
+}
+
+/* Best Seller Item CSS */
+.best-seller-item {
+    width: 200px;
+    height: 360px;
+    margin: 100px 30px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Item Image */
+.image-box {
+    position: relative;
+    width: 160px;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+.initial-img,
+.hover-img {
+    position: absolute;
+}
+
+.image-box img {
+    width: 100%;
+}
+
+.hover-img {
+    display: none;
+    max-height: 160px;
+    max-width: 200px;
+}
+
+.image-box:hover .initial-img {
+    display: none;
+}
+
+.image-box:hover .hover-img {
+    display: block;
+}
+
+/* Action Button CSS */
+.image-box:hover .action-box {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 82px;
+}
+
+.image-box:hover .action-box button:hover {
+    background-color: #1c2766;
+}
+
+.action-box .btn-add {
+    width: 100%;
+}
+
+.action-box .btn-action {
+    width: 30%;
+}
+
+.action-box button {
+    height: 36px;
+    background-color: #29388d;
+    color: #fff;
+}
+
+.best-seller-item .item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating .star {
+    color: gold;
+    font-size: 20px;
+}
+
+.item-details .rating {
+    margin-bottom: 12px;
+}
+
+.item-details .item-name {
+    margin-bottom: 12px;
+    font-family: "Open Sans";
+    color: #797878;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.item-details .item-price {
+    font-family: "Open Sans";
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+}
