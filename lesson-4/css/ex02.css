@@ -59,6 +59,13 @@ header h3 {
     padding-left: 36px;
 }
 
+.input-field:hover {
+    border: 2px solid #a3a0a0;
+}
+.input-field:hover::placeholder {
+    font-size: 28px;
+}
+
 /*  Button CSS */
 .form-booking button {
     width: 45%;
@@ -72,5 +79,5 @@ header h3 {
 }
 
 .form-booking button:hover {
-    background-color: #6e1913;
+    background-color: rgb(216, 51, 39);
 }

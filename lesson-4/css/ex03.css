@@ -60,49 +60,26 @@ header {
     padding: 0 50px;
 }
 
+.nav-list li:hover {
+    background-color: #29388e;
+    color: #fff;
+}
+
 /* Nav Select CSS */
-/* skincare */
-#skincare:checked ~ header .nav-list li label[for="skincare"] {
+
+#skincare:checked ~ header label[for="skincare"],
+#haircare:checked ~ header label[for="haircare"],
+#cosmetics:checked ~ header label[for="cosmetics"],
+#fragrance:checked ~ header label[for="fragrance"],
+#makeup:checked ~ header label[for="makeup"] {
     background-color: #29388e;
     color: #fff;
 }
 
-#skincare:checked ~ .best-seller-list .skincare-items {
-    display: flex;
-}
-
-/* haircare */
-#haircare:checked ~ header .nav-list li label[for="haircare"] {
-    background-color: #29388e;
-    color: #fff;
-}
-#haircare:checked ~ .best-seller-list .haircare-items {
-    display: flex;
-}
-
-/* cosmetics */
-#cosmetics:checked ~ header .nav-list li label[for="cosmetics"] {
-    background-color: #29388e;
-    color: #fff;
-}
-#cosmetics:checked ~ .best-seller-list .cosmetics-items {
-    display: flex;
-}
-
-/* fragrance */
-#fragrance:checked ~ header .nav-list li label[for="fragrance"] {
-    background-color: #29388e;
-    color: #fff;
-}
-#fragrance:checked ~ .best-seller-list .fragrance-items {
-    display: flex;
-}
-
-/* makeup */
-#makeup:checked ~ header .nav-list li label[for="makeup"] {
-    background-color: #29388e;
-    color: #fff;
-}
+#skincare:checked ~ .best-seller-list .skincare-items,
+#haircare:checked ~ .best-seller-list .haircare-items,
+#cosmetics:checked ~ .best-seller-list .cosmetics-items,
+#fragrance:checked ~ .best-seller-list .fragrance-items,
 #makeup:checked ~ .best-seller-list .makeup-items {
     display: flex;
 }
