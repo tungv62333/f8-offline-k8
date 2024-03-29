@@ -1,0 +1,41 @@
+/* 
+
+BACKGROUND
+
+1. background-color
+2. background-image
+3. background-size
+4. background-position
+    - Xác định theo X(ngang) Y(dọc)
+    - Có thể nhận giá trị âm
+    - Có thể nhận giá trị tương đối hoặc tuyệt đối
+    - left 0: sát trái (0% 0)
+    - right 0: sát phải (100% 0)
+    - center center: giữa (50% 50%)
+    - 0 top: sát trên (0%)
+    - 0 bottom: sát dưới (100%)
+    ** Áp dụng trong CSS Sprites: 1 ảnh lớn chứa nhiều ảnh nhỏ, sử dụng position để cắt (chỉ mất thời gian tải lần đầu, không cần nhiều request). thường áp dụng cho icon -> hiện ít được sử dụng
+5. background-repeat
+    - repeat: mặc định
+    - no-repeat: không lặp
+    - repeat-x: lặp ngang
+    - repeat-y: lặp dọc
+6. background-attachment
+7. background
+
+TÌM HIỂU: sự khác nhau giữa cover và contain trong backround-size
+
+*/
+
+body {
+    height: 2000px;
+    background-color: aqua;
+    background-image: url("https://picsum.photos/1000");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 300px;
+}
+
+/* .content {
+    background-color: aquamarine;
+} */

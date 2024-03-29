@@ -1,0 +1,61 @@
+/* 
+******Thuộc tính text-decoration: Tạo line cho văn bản
+    - none 
+    - underline: dưới
+    - overline: trên
+    - line-through: giữa
+    Có thể kết hợp cả 3 (trừ none)
+
+
+******Thuộc tính text-transform: Chữ hoa, chữ thương
+    - none
+    - uppercase: hoa
+    - lowercase: thường
+    - capitalize: chữ cái đầu hoa
+
+
+******Thuộc tính letter-spacing: khoảng cách giữa các ký tự
+
+
+******Thuộc tính word-spacing: khoảng cách giữa các từ
+
+
+******Thuộc tính word-wrap: ngắt xuống dòng khi tràn trang, ngắt từ xuống dòng
+
+******Thuộc tính word-break: ngắt xuống dòng khi tràn trang, có cách từ và cùng 1 dòng
+
+
+******Thuộc tính text-indent: cách đầu dòng (chỉ dòng đầu, có thể âm)
+
+
+******Thuộc tính text-alight: vị trí của chữ
+    - left
+    - center
+    - right
+    - justify: căn đều 2 bên
+Lưu ý: Thuộc tính này sẽ căn chỉnh cả các thẻ inline: img, button, input,...
+    - text-alight-last: dòng cuối
+
+*/
+
+body {
+    /* text-decoration: underline overline line-through; */
+    /* text-transform: capitalize; */
+    /* letter-spacing: 5px; */
+    word-spacing: 5px;
+}
+
+h2 {
+    /* word-wrap: break-word; */
+    word-break: break-all;
+}
+
+p {
+    text-indent: 2px;
+    text-align: left;
+    text-align-last: right;
+}
+
+.link {
+    text-align: center;
+}

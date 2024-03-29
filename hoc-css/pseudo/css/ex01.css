@@ -1,0 +1,41 @@
+/* 
+selector::name {
+
+
+}
+- before: tạo một phần tử ở phía trước phần tử. BẮT BUỘC CÓ thuộc tính content: "" => inline, là thẻ con của element đang xử lý
+- after: tạo một phần tử ở phía sau phần tử. BẮT BUỘC CÓ thuộc tính content: "" => inline, là thẻ con của element đang xử lý
+- first-letter
+- first-line
+- selection
+- placeholder
+
+*/
+
+/* h1::before {
+    content: "A";
+}
+h1::after {
+    content: "";
+} */
+
+p::first-letter {
+    color: red;
+}
+
+p::first-line {
+    color: yellow;
+}
+
+p::selection {
+    background-color: black;
+    color: white;
+}
+
+input::placeholder {
+    color: red;
+}
+
+input {
+    color: blue;
+}

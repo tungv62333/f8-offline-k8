@@ -1,0 +1,41 @@
+/* 
+    Selector ~ + ,
+
+
+
+    ~ +
+    
+ - Ngang hàng
+ - Cùng thuộc 1 cha
+ - Chọn thành phần đứng sau
+ - ~: Tất cả thành phần đứng sau
+ - +: Chỉ thành phần đứng sau liền kề
+
+    ,
+    Kết hợp nhiều selector sử dụng chung 1 block
+    selector1, selector2, selector3,...selectorn {
+        code
+    }
+
+*/
+/* 
+.box p ~ h2 {
+    color: red;
+}
+
+.box p ~ div h2 {
+    color: green;
+}
+
+.box p + h2 {
+    color: green;
+}
+
+.box h2 + h2,
+.box p + h2 {
+    color: blue;
+} */
+
+.box h2 + h2 {
+    color: blue;
+}

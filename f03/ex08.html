@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FORM</title>
+    </head>
+    <body>
+        <h1>HTML FORM</h1>
+        <form
+            action="https://api-gateway.fullstack.edu.vn/action_page.php"
+            method="get"
+        >
+            <!-- Trường nhập liệu (field) -->
+            <div>
+                <label for="">Label</label>
+                <input
+                    type="text"
+                    name=""
+                    placeholder="Label"
+                    value=""
+                    readonly
+                    disabled
+                    required
+                />
+            </div>
+
+            <!-- text  -->
+            <div>
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    maxlength="5"
+                />
+            </div>
+
+            <!-- email -->
+            <div>
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                />
+            </div>
+
+            <!-- password -->
+            <div>
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                />
+            </div>
+
+            <!-- number -->
+            <div>
+                <label for="age">Age</label>
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    placeholder="Age"
+                    min="18"
+                    max="50"
+                    step="0.1"
+                />
+            </div>
+
+            <!-- date -->
+            <div>
+                <label for="birthday">Birthday</label>
+                <input
+                    type="date"
+                    id="birthday"
+                    name="birthday"
+                    placeholder="Birthday"
+                />
+            </div>
+
+            <!-- file -->
+            <div>
+                <label for="avatar">Avatar</label>
+                <input
+                    type="file"
+                    id="avatar"
+                    name="avatar"
+                    placeholder="Avatar"
+                />
+            </div>
+
+            <!-- range -->
+            <!-- step mặc định = 1 -->
+            <div>
+                <label for="price">Price</label>
+                <input
+                    type="range"
+                    id="price"
+                    name="price"
+                    value="0"
+                    step="0.1"
+                    min="20"
+                    max="50"
+                />
+            </div>
+
+            <!-- radio -->
+            <div>
+                <label>Gender</label>
+                <label>
+                    <input type="radio" name="gender" value="0" checked /> 3D
+                </label>
+                <label
+                    ><input type="radio" name="gender" value="1" /> Male
+                </label>
+                <label
+                    ><input type="radio" name="gender" value="2" /> Female
+                </label>
+            </div>
+
+            <!-- chekcbox -->
+            <!-- tùy theo ngôn ngữ backend mà đặt thuộc tính name khác nhau
+            với -->
+            <div>
+                <label>Bạn biết F8 qua đâu?</label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="source[]"
+                        value="youtube"
+                        checked
+                    />
+                    Youtube
+                </label>
+                <label>
+                    <input type="checkbox" name="source[]" value="facebook" />
+                    Facebook
+                </label>
+                <label>
+                    <input type="checkbox" name="source[]" value="website" />
+                    Website
+                </label>
+            </div>
+
+            <!-- select option -->
+            <div>
+                <label for="provinces">Tỉnh/Thành phố</label>
+                <select name="provinces" id="provinces">
+                    <option value="0" selected>-- Chọn Tỉnh/TP --</option>
+                    <option value="1">Hà Nội</option>
+                    <option value="2">Đà Nẵng</option>
+                    <option value="3">TP. Hồ Chí Minh</option>
+                </select>
+            </div>
+            <div>
+                <label for="provinces_multiple">Tỉnh/Thành phố</label>
+                <select
+                    name="provinces_multiple"
+                    id="provinces_multiple"
+                    multiple
+                >
+                    <option value="0" selected>-- Chọn Tỉnh/TP --</option>
+                    <option value="1">Hà Nội</option>
+                    <option value="2">Đà Nẵng</option>
+                    <option value="3">TP. Hồ Chí Minh</option>
+                </select>
+            </div>
+
+            <!-- textarea -->
+            <div>
+                <label for="message">Tin nhắn</label>
+                <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Tin nhắn"
+                    style="resize: none"
+                >
+Không có thuộc tính value
+F8</textarea
+                >
+            </div>
+
+            <!-- hidden -->
+            <input type="hidden" value="abc" />
+
+            <!-- Nút gửi dữ liệu (submit) -->
+            <button type="submit">Submit</button>
+            <button type="button">Submit</button>
+            <button type="reset">Submit</button>
+        </form>
+    </body>
+</html>

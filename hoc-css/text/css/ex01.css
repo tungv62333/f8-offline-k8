@@ -1,0 +1,60 @@
+/* 
+Thuộc tính color: thay đổi màu văn bản
+Cú pháp:
+    color: value;
+    - Mã màu: hexa, rgb, hsl
+    - Tên màu
+
+Color Opacity --> Độ trong suốt của màu
+
+Color Transparent
+
+Các giá trị kế thừa trong CSS
+- initial: ban đầu
+- inherit
+
+*****Thuộc tính Color là 1 thuộc tính KẾ THỪA
+
+Các đơn vị trong CSS
+- px
+- pt
+- em
+- rem
+- %
+- vw
+- vh
+
+*/
+
+h1 {
+    color: rgb(218, 4, 4);
+}
+
+h2 {
+    /* color: rgba(218, 4, 4, 0.477); */
+    /* color: transparent; */
+}
+
+h1:hover {
+    /* đưa về màu ban đầu của trình duyệt */
+    color: initial;
+}
+
+.box {
+    color: rgb(28, 44, 159);
+    /* currentColor đổi theo màu hiện tại */
+    border: 5px solid currentColor;
+}
+
+/* .box h2 {
+    color: blueviolet;
+} */
+
+.box h2:hover {
+    /* đưa về màu của cha */
+    color: inherit;
+}
+
+.box:hover {
+    color: brown;
+}

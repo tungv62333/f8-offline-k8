@@ -1,0 +1,43 @@
+/* 
+******Thuộc tính font-size: Thay đổi cỡ chữu
+Cú pháp: 
+    font-size: value + unit
+
+Đơn vị:
+1. Đơn vị tuyệt đối
+    - px
+    - pt = 1.3 x px
+
+2. Đơn bị tương đối
+    - em --> tỉ lệ với thành phần cha
+    - rem --> tỉ lệ với mặc định trình duyệt
+    - % --> tỉ lệ với thành phần cha
+
+1em, rem = font-size cơ sở (16px)
+
+
+******Thuộc tính line-height: Thiết lập chiều cao cho dòng văn bản (Giãn dòng)
+Cú pháp:
+    line-height: value;
+Giá trị thực: value * font-size
+
+*/
+
+html {
+    /* font-size: 10px; */
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+p {
+    /* font-size = 16px --> line-height = 24px */
+    /* dùng tương đối / không dùng tuyệt đối */
+    line-height: 1.2;
+}

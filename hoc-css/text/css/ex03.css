@@ -1,0 +1,35 @@
+/* 
+******Thay đổi font chữ
+Cú pháp:
+    font-family: tên font1, tên font 2, ...
+
+Font chữ có 2 loại: 
+    - Font mặc định trên máy tính
+    - Font nạp từ bên ngoài
+
+Lưu ý: Nếu font chữ có khoảng trắng --> thêm dấu nháy (")
+
+    serif: họ font có chân
+    san-serif: họ font không chân
+    monospace: họ font mono
+
+
+
+******Trong 1 font chữ có 2 yếu tố quy định kiểu: 
+    - Độ dày: 100 --> 900 (bội số của 100): phổ biết: 300, 400, 700 (light, regular, bold)
+    - Nghiêng hay không?
+   
+*/
+
+/* @font-face {
+    font-family: "TacOne";
+    src: url("../fonts/TacOne-Regular.ttf");
+} */
+
+@import url(../css/font.css);
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
