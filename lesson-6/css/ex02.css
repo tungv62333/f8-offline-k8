@@ -119,3 +119,7 @@ main {
     font-weight: 700;
     font-size: 1.4rem;
 }
+
+button {
+    cursor: pointer;
+}
