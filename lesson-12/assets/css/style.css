@@ -89,6 +89,9 @@ p {
     line-height: 40px;
     text-align: center;
     border: 1px solid #ccc;
+    color: #949090;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .page-header .container .grover-logo {
     position: absolute;

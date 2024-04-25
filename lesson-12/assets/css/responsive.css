@@ -72,15 +72,13 @@
     nav menu
 
     */
-
     .page-header .container {
         flex-direction: column;
-        height: 340px;
-    }
-    .open-nav-box {
-        display: block;
+        overflow: hidden;
+        transition: all 0.3s linear;
     }
     .page-header .container .navbar {
+        display: flex;
         position: absolute;
         top: 60px;
         left: 0;
@@ -99,9 +97,17 @@
         padding: 10px 0;
     }
     .page-header .container .search-box {
-        left: calc(100% - 128px);
-        bottom: 50px;
+        display: flex;
+        top: 240px;
+        right: calc(50% - 128px);
     }
+    .open-nav-box {
+        display: block;
+    }
+    #open-nav:checked + .page-header .container {
+        height: 340px;
+    }
+
     .btn-order-now {
         width: 160px;
         height: 72px;
