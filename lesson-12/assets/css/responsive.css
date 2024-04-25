@@ -31,7 +31,7 @@
         height: 58px;
     }
     .page-header .container {
-        width: 90%;
+        width: 80%;
     }
     .page-header .order-header {
         padding: 0 10% 130px;
@@ -103,6 +103,8 @@
     }
     .open-nav-box {
         display: block;
+        position: absolute;
+        top: 0;
     }
     #open-nav:checked + .page-header .container {
         height: 340px;
