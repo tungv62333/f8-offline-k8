@@ -98,7 +98,7 @@ p {
 
 .page-header .container .navbar {
     position: absolute;
-    right: calc(50% - 145px);
+    right: calc(50% - 100px);
 }
 
 .page-header .container .nav-list {
