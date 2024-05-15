@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+input {
+    display: none;
+}
+
+.popup-wrapper {
+    position: fixed;
+    inset: 0;
+    display: none;
+}
+
+.popup-wrapper .popup-content {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.popup-wrapper .popup-content header {
+    display: flex;
+}
+
+.popup-content header h3 {
+    flex: 1;
+}
+
+.btn-cancel:hover {
+    color: red;
+}
+
+.show {
+    background-color: #ddd;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.show:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+#show:checked ~ .popup-wrapper {
+    display: block;
+}
+
+#hide:checked ~ .popup-wrapper {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.377);
+}

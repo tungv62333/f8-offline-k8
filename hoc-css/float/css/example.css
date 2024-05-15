@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    border: 1px solid red;
+    margin: 30px 20px;
+}
+
+.box::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.box img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 10px;
+    shape-outside: circle();
+}
+
+.box button {
+    float: right;
+}

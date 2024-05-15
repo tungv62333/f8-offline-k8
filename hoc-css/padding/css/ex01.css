@@ -1,0 +1,34 @@
+/* 
+******Thuộc tính padding: Đệm 1 thẻ html (khoảng các từ border đến nội dung)
+    - padding nhận cả giá trị tương đối và tuyệt đối
+    - padding top và bottom KHÔNG hoạt động với inline
+    - padding nhận đủ các trường hợp 1 giá trị, 2 giá trị, 3 giá trị, 4 giá trị
+    - padding không có giá trị auto và âm
+
+    4 thuộc tính mở rộng
+    - padding-top
+    - padding-left
+    - padding-right
+    - padding-bottom
+
+    * padding, margin nếu dùng Giá trị % theo WITDH THẺ CHA
+*/
+
+.box {
+    border: 2px solid red;
+    padding-top: 20%;
+}
+
+.btn-wrap {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid red;
+    padding: 10px 30px;
+    background-color: green;
+    color: #fff;
+}

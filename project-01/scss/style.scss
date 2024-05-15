@@ -1,0 +1,26 @@
+// Partials
+@use "partials/variables";
+@use "partials/reset";
+@use "partials/mixin";
+@use "partials/base";
+
+// Components
+@use "components/breadcrumbs";
+@use "components/cart_item";
+
+// Layout
+@use "layouts/footer";
+@use "layouts/header";
+
+// Pages
+@use "pages/about";
+@use "pages/home";
+@use "pages/product";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html {
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+}
+

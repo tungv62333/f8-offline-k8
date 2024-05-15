@@ -1,0 +1,32 @@
+@use "../partials/variables" as v;
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 12.5%;
+    .logo-img {
+        flex: 1;
+    }
+    nav {
+        ul {
+            display: flex;
+            li {
+                color: v.$textColor;
+                font-size: 1.6rem;
+                font-weight: 600;
+                padding-right: 5rem;
+                :hover {
+                    color: v.$greenMain;
+                }
+            }
+        }
+    }
+    .cart-box {
+        width: 2.5rem;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

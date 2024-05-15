@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.container .click {
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 99px;
+    background: green;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.sidebar-wrapper {
+    position: fixed;
+    inset: 0;
+    transition: all 0.3s ease;
+    transform: translate(-100%);
+}
+
+.sidebar-wrapper .bg-overlay {
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    background-color: #00000024;
+    transition: opacity 0.2s 0.3s ease;
+}
+
+.sidebar-wrapper .sidebar {
+    position: fixed;
+    width: 70%;
+    inset: 0 auto;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.sidebar-wrapper .sidebar .sidebar-header {
+    padding: 20px 10px;
+}
+
+.sidebar .sidebar-header .btn-close {
+    padding: 10px;
+    font-size: 28px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.sidebar .sidebar-header .btn-close::after {
+    clear: both;
+}
+
+#panel:checked ~ .sidebar-wrapper {
+    transform: translate(0);
+}
+
+#panel:checked ~ .sidebar-wrapper .bg-overlay {
+    opacity: 1;
+}
+
+#panel:not(:checked) ~ .sidebar-wrapper .bg-overlay {
+    background-color: transparent;
+}

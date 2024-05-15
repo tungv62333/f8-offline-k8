@@ -1,0 +1,77 @@
+/* 
+Animation: Nhóm các thuộc tính để xây dựng các hiệu ứng cho trang web
+
+1. keyframes --> Thiết kế kịch bản của hiệu ứng 
+@keyframes tenhieuung {
+    from {
+    
+    }
+
+    part2% {
+    
+    }
+
+    part3% {
+    
+    }
+
+    partn% {
+    
+    }
+
+    to {
+
+    }
+
+    
+}
+
+2. Thuộc tính animation --> Áp dụng animation vào selector nào
+
+- animation-name: tenhieuung
+- animation-duration: Tổng thời gian thực hiện hiệu ứng
+- animation-timing-function: Tốc độ (Giống transition)
+- animation-delay: Trễ trước khi thực hiện hiệu ứng
+- animation-iteration-count: Số lần chạy hiệu ứng (Mặc định: 1, Vô hạn: infinite)
+
+*/
+
+.box {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin: 30px auto;
+    position: relative;
+}
+
+.box span {
+    width: 45px;
+    height: 45px;
+    display: block;
+    background: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    25% {
+        top: 0;
+        left: 100%;
+        translate: -100% 0;
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+        translate: -100% -100%;
+    }
+    75% {
+        top: 100%;
+        left: 0;
+        translate: 0 -100%;
+    }
+}

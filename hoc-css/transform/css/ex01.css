@@ -1,0 +1,63 @@
+/* 
+******Thay đổi hình dạng của 1 thẻ html: 
+xoay, nghiêng, di chuyển, phóng to, thu nhỏ
+
+Cú pháp: 
+    transform: value
+        - rotate(angle) -> mặc định là rotateZ
+        - rotateX(angle)
+        - rotateY(angle)
+    -> có thể dùng rotate(angle): value **không có rotateX,Y
+
+        - scale(x, y)
+        - scaleX(x, y)
+        - scaleY(x, y)
+
+        - skew(x, y)
+        - skewX(x)
+        - skewY(y)
+
+        - translate(x, y)
+        - translateX(x)
+        - translateY(y)
+        **Dùng đơn vị % tỉ lệ theo chính nó != position tỉ lệ với thẻ cha
+
+    ***Các thuộc tính tách ra:
+    - rotate: -> transform: rotate()
+    - scale: -> transform: scale()
+    - translate: -> transform: translate()
+
+
+******Thuộc tính transform-origin: x y --> chọn vị trí của trục khi thực hiện transform (các giá trị giống y hệt thuộc tính background-position
+
+
+*/
+
+.container {
+    padding: 50px;
+    border: 1px solid red;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background: green;
+    color: #fff;
+    font-size: 2rem;
+    margin: 30px auto;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform-origin: 0 10%;
+}
+
+.container:hover .box {
+    transform: rotateX(180deg);
+    /* rotate: 45deg; */
+    /* transform: rotate(45deg) scale(1.5, 1.1); */
+    /* transform: skew(45deg, 0); */
+    /* transform: translate(100px, 100px); */
+    /* top: 100px;
+    left: 100px;*/
+}

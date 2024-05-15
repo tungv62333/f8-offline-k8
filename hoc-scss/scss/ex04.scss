@@ -1,0 +1,14 @@
+@use "components/header"; //Namespace: header
+@use "pages/home/header" as headerPage; //Đổi tên Namespace (Thường áp dụng trong trường hợp trùng tên file)
+//Truy cập biến, mixin, function
+//Cú pháp: tennamespace.tenmember
+.products {
+    background-color: header.$primaryColor;
+    @include header.section-base;
+}
+
+.posts {
+    @extend %section-base;
+    background-color: headerPage.$primaryColor;
+
+}
