@@ -1,0 +1,289 @@
+@media screen and (max-width: 1399.98px) {
+    .btn {
+        font-size: 1.6rem;
+        width: 180px;
+        height: 58px;
+    }
+    .btn-order-now {
+        width: 186px;
+        height: 72px;
+    }
+    .order-content .order-description h1 {
+        font-size: 4.8rem;
+    }
+
+    .section-title {
+        font-size: 3.2rem;
+    }
+
+    .section-sub-title {
+        font-size: 1.6rem;
+    }
+    .section-description {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .btn {
+        font-size: 1.6rem;
+        width: 180px;
+        height: 58px;
+    }
+    .page-header .container {
+        width: 80%;
+    }
+    .page-header .order-header {
+        padding: 0 10% 130px;
+    }
+    .about-section {
+        padding: 30px 10% 30px;
+    }
+    .delivery-section {
+        padding: 0 10% 60px;
+    }
+    .download-section {
+        padding: 100px 10%;
+    }
+    .page-footer {
+        padding: 100px 10%;
+    }
+    .order-header .btn-order .btn-order-process {
+        font-size: 1.6rem;
+    }
+    .order-content .order-description h1 {
+        font-size: 3.8rem;
+    }
+
+    .section-title {
+        font-size: 3.2rem;
+    }
+
+    .section-sub-title {
+        font-size: 1.6rem;
+    }
+    .section-description {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    /* 
+    nav menu
+
+    */
+    .page-header .container {
+        flex-direction: column;
+        overflow: hidden;
+        transition: all 0.3s linear;
+    }
+    .page-header .container .navbar {
+        display: flex;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .container .navbar .nav-list {
+        position: absolute;
+        top: 60px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .nav-list .nav-item {
+        padding: 10px 0;
+    }
+    .page-header .container .search-box {
+        display: flex;
+        top: 240px;
+        right: calc(50% - 128px);
+    }
+    .open-nav-box {
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+    #open-nav:checked + .page-header .container {
+        height: 340px;
+    }
+
+    .btn-order-now {
+        width: 160px;
+        height: 72px;
+    }
+    .page-header .container {
+        width: 80%;
+    }
+    .page-header .order-header {
+        padding: 0 12% 130px;
+    }
+    .about-section {
+        padding: 30px 12% 30px;
+        flex-direction: column;
+    }
+    .delivery-section {
+        padding: 0 12% 60px;
+        flex-direction: column;
+    }
+    .delivery-section .delivery-section-img {
+        order: -1;
+    }
+    .download-section {
+        padding: 100px 12%;
+        flex-direction: column;
+    }
+    .download-section .download-section-img {
+        width: 100%;
+        margin-bottom: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .download-section .download-section-img img {
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-header .order-header {
+        flex-direction: column;
+    }
+
+    .page-header .order-header .order-content {
+        width: 100%;
+    }
+
+    .order-content .order-description h1 {
+        font-size: 3.8rem;
+        line-height: 58px;
+    }
+    .page-header .order-header .order-img {
+        width: 100%;
+        overflow: hidden;
+    }
+    .section-title {
+        font-size: 3.2rem;
+    }
+
+    .section-sub-title {
+        font-size: 1.6rem;
+    }
+    .section-description {
+        font-size: 1.6rem;
+    }
+
+    .page-footer .footer-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-footer .footer-list .footer-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    .page-footer .footer-list .footer-item:last-child {
+        width: 100%;
+    }
+    .footer-item .item-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    /*
+    ảnh dòng 1
+     header xuong dong
+     btn center
+     service item xuong dong
+     */
+
+    .page-header .order-header .order-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .order-content .order-description h1 {
+        font-size: 4.8rem;
+        text-align: center;
+    }
+
+    .service-section .service-list {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .service-list .service-item {
+        position: relative;
+        width: 70%;
+        height: 330px;
+        margin: 20px 30px;
+    }
+
+    .service-list .service-item .overlay {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 99%;
+        height: 325px;
+        border-radius: 20px;
+        background-color: #fe6a6a;
+        transform-origin: 0 10px;
+        transform: rotate(0);
+        transition: all 0.3s linear;
+    }
+
+    .about-section .about-section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .delivery-section .delivery-section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .download-section .download-section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .page-header .container {
+        width: 98%;
+    }
+    .page-header .order-header {
+        padding: 0 1% 130px;
+    }
+    .about-section {
+        padding: 30px 1% 30px;
+    }
+    .delivery-section {
+        padding: 0 1% 60px;
+    }
+    .download-section {
+        padding: 100px 1%;
+    }
+    .page-footer {
+        padding: 100px 1%;
+    }
+}

@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Lato", sans-serif;
+}
+
+.accordion-section {
+    margin-top: 20px;
+}
+
+.accordion-section input[type="radio"] {
+    display: none;
+}
+
+/* Article CSS */
+.toggle-button {
+    background-color: #d85824;
+    display: flex;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.toggle-button:hover {
+    background-color: #da7751;
+}
+
+.toggle-button label {
+    line-height: 3.15;
+    margin-left: 12px;
+    flex: 1;
+}
+
+.toggle-button label i {
+    margin-right: 8px;
+}
+
+.accordion-section article {
+    margin-bottom: 5px;
+    padding: 0 3px;
+}
+
+.content p {
+    font-size: 1.4rem;
+    margin: 12px;
+}
+
+.toggle-button .hide-content,
+.accordion-section .content {
+    display: none;
+}
+
+/*  Xử lý ẩn hiện nội dung */
+#show-set-colors:checked ~ .set-colors .toggle-button .show-content,
+#show-theme-color:checked ~ .theme-color .toggle-button .show-content,
+#show-change-icon:checked ~ .change-icon .toggle-button .show-content {
+    display: none;
+}
+
+#show-set-colors:checked ~ .set-colors .toggle-button .hide-content,
+#show-theme-color:checked ~ .theme-color .toggle-button .hide-content,
+#show-change-icon:checked ~ .change-icon .toggle-button .hide-content {
+    display: block;
+}
+
+#show-set-colors:checked ~ .set-colors .content,
+#show-theme-color:checked ~ .theme-color .content,
+#show-change-icon:checked ~ .change-icon .content {
+    display: block;
+}
+
+#hide-set-colors:checked ~ .set-colors .toggle-button .hide-content,
+#hide-set-colors:checked ~ .set-colors .content,
+#hide-theme-color:checked ~ .theme-color .toggle-button .hide-content,
+#hide-theme-color:checked ~ .theme-color .content,
+#hide-change-icon:checked ~ .change-icon .toggle-button .hide-content,
+#hide-change-icon:checked ~ .change-icon .content {
+    display: none;
+}

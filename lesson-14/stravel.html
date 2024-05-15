@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mumbai</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+        <script>
+            new WOW().init()
+        </script>
+    </head>
+    <body>
+        <input
+            type="radio"
+            name="switch-theme"
+            id="day-theme"
+            class="switch-theme"
+            hidden
+            checked
+        />
+        <input
+            type="radio"
+            name="switch-theme"
+            id="night-theme"
+            class="switch-theme"
+            hidden
+        />
+        <div id="loading" class="loading active">
+            <div class="container">
+                <div class="dash uno"></div>
+                <div class="dash dos"></div>
+                <div class="dash tres"></div>
+                <div class="dash cuatro"></div>
+            </div>
+        </div>
+        <header class="page-header">
+            <a href="#" class="logo">
+                <span class="highlight">S</span>TRAVEL
+            </a>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home-section">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item"><a href="#about-section">About</a></li>
+                    <li class="nav-item">
+                        <a href="#places-section">Điểm Đến</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services-section">Dịch Vụ</a>
+                    </li>
+                    <li class="nav-item"><a href="#gallery-section">Ảnh</a></li>
+                    <li class="nav-item"><a href="#blogs-section">Blogs</a></li>
+                </ul>
+            </nav>
+            <div class="day-and-night">
+                <label for="night-theme">
+                    <i class="fa-regular fa-moon"></i>
+                </label>
+
+                <label for="day-theme">
+                    <i class="fa-regular fa-sun"></i>
+                </label>
+            </div>
+            <a href="#" class="btn">Đặt Ngay</a>
+        </header>
+        <main class="page-content">
+            <section class="content-section" id="home-section">
+                <div class="container">
+                    <h2 class="section-title">
+                        <span class="title-highlight">mumbai</span>
+                        thành phố có tất cả
+                    </h2>
+                    <p class="section-detail">
+                        Mumbai Không Chỉ Là Trung Tâm Tài Chính – Kinh Tế, Kinh
+                        Đô Điện Ảnh – Thời Trang Của Ấn Độ, Mà Đây Còn Là Thành
+                        Phố Cảng Vừa Hiện Đại Nhưng Vẫn Mang Nhiều Nét Cổ Kính
+                        Với Những Công Trình Kiến Trúc, Quán Bar, Nhà Hàng, Viện
+                        Bảo Tàng Và Các Cửa Hàng Thời Trang Hấp Dẫn…
+                    </p>
+                    <a
+                        href="#about"
+                        class="btn wow animate__animated animate__slideInUp"
+                        >tìm hiểu thêm</a
+                    >
+                </div>
+            </section>
+            <!-- End .home-section -->
+
+            <section class="content-section" id="book-section">
+                <div class="container">
+                    <h1
+                        class="section-title wow animate__animated animate__zoomIn"
+                    >
+                        ưu đãi 30.000.000 cho 5người/3ngày
+                    </h1>
+                    <a
+                        href="#"
+                        class="btn wow animate__animated animate__zoomIn"
+                    >
+                        đặt ngay
+                    </a>
+                </div>
+            </section>
+            <!-- End .book-section -->
+
+            <section class="content-section" id="about-section">
+                <div
+                    class="container"
+                    style="visibility: visible; animation-name: fadeInLeft"
+                    data-wow-delay="0.05s"
+                >
+                    <figure
+                        class="video-container wow animate__animated animate__slideInLeft"
+                    >
+                        <input
+                            type="radio"
+                            name="video"
+                            id="vid-1"
+                            class="select-vid"
+                            hidden
+                            checked
+                        />
+                        <video
+                            muted
+                            autoplay
+                            loop
+                            class="about-video"
+                            src="https://stravelhtml.vercel.app/videos/vid-1.mp4"
+                        ></video>
+                        <input
+                            type="radio"
+                            name="video"
+                            id="vid-2"
+                            class="select-vid"
+                            hidden
+                        />
+                        <video
+                            muted
+                            autoplay
+                            loop
+                            class="about-video"
+                            src="https://stravelhtml.vercel.app/videos/vid-2.mp4"
+                        ></video>
+                        <input
+                            type="radio"
+                            name="video"
+                            id="vid-3"
+                            class="select-vid"
+                            hidden
+                        />
+
+                        <video
+                            muted
+                            autoplay
+                            loop
+                            class="about-video"
+                            src="https://stravelhtml.vercel.app/videos/vid-3.mp4"
+                        ></video>
+                        <div class="video-panel">
+                            <label class="panel-icon" for="vid-1"></label>
+                            <label class="panel-icon" for="vid-2"></label>
+                            <label class="panel-icon" for="vid-3"></label>
+                        </div>
+                    </figure>
+                    <div
+                        class="section-info wow animate__animated animate__slideInRight"
+                        style="visibility: visible; animation-name: fadeInRight"
+                    >
+                        <h4 class="section-sub-title">
+                            Tại Sao Nên Chọn Stravel
+                        </h4>
+                        <h2 class="section-title">Trải Nghiệm Bậc Nhất</h2>
+                        <p class="section-detail">
+                            Chúng Tôi Hợp Tác Với Những Địa Điểm Nghỉ Dưỡng Có
+                            Trải Nghiệm Bậc Nhất Để Đem Lại Một Kỳ Nghỉ Tuyệt
+                            Vời Cho Bạn Cùng Người Thân
+                        </p>
+                        <a href="#" class="btn">Tìm hiểu thêm về Stravel</a>
+                    </div>
+                </div>
+            </section>
+            <!-- End .about-section -->
+
+            <section class="content-section" id="places-section">
+                <div class="container">
+                    <div class="section-info">
+                        <h4 class="section-sub-title">
+                            Những Điểm Đến Ở Mumbai
+                        </h4>
+                        <h2 class="section-title">
+                            Những Điểm Du Lịch Bậc Nhất
+                        </h2>
+                    </div>
+                    <div class="place-list">
+                        <div
+                            class="place-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="place-img">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/des-1.jpg"
+                                    alt="place-1"
+                                />
+                            </div>
+                            <div class="item-detail">
+                                <h4 class="place-title">Ấn Độ Môn</h4>
+                                <p class="place-description">
+                                    Được Xây Dựng Vào Năm 1931, Còn Có Tên Gọi
+                                    Khác Là “Bia Kỷ Niệm Chiến Sĩ Ấn Độ”
+                                </p>
+                            </div>
+                            <a class="btn-read-more" href="#">
+                                Đọc thêm
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="place-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="place-img">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/des-2.jpg"
+                                    alt="place-2"
+                                />
+                            </div>
+                            <div class="item-detail">
+                                <h4 class="place-title">Tòa Nhà Hình Trứng</h4>
+                                <p class="place-description">
+                                    Nghệ Thuật Kiến Trúc Thị Giác Kết Hợp Với
+                                    Cách Sản Xuất, Sử Dụng Và Tái Tạo Năng Lượng
+                                    Thông Minh
+                                </p>
+                            </div>
+                            <a class="btn-read-more" href="#">
+                                Đọc thêm
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="place-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="place-img">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/des-3.jpg"
+                                    alt="place-3"
+                                />
+                            </div>
+                            <div class="item-detail">
+                                <h4 class="place-title">
+                                    Vườn Quốc Gia Sanjay Gandhi
+                                </h4>
+                                <p class="place-description">
+                                    Bao Gồm Loài Bướm Đêm Atlas – Bướm Đêm Lớn
+                                    Nhất Thế Giới, Cây Hoa Karvi 7 Năm Nở Hoa
+                                    Một Lần…
+                                </p>
+                            </div>
+                            <a class="btn-read-more" href="#">
+                                Đọc thêm
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="place-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="place-img">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/des-4.jpg"
+                                    alt="place-4"
+                                />
+                            </div>
+                            <div class="item-detail">
+                                <h4 class="place-title">
+                                    Trung Tâm Triễn Lãm Jehanggir
+                                </h4>
+                                <p class="place-description">
+                                    Khu Vực Triển Lãm Hàng Đầu Ở Mumbai Dành Cho
+                                    Nền Mỹ Thuật Ấn Độ Đương Đại
+                                </p>
+                            </div>
+                            <a class="btn-read-more" href="#">
+                                Đọc thêm
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="place-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="place-img">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/des-5.jpg"
+                                    alt="place-5"
+                                />
+                            </div>
+                            <div class="item-detail">
+                                <h4 class="place-title">Hang Động Elephanta</h4>
+                                <p class="place-description">
+                                    Lưu Giữ Nhiều Kiến Trúc Chạm Khắc Tinh Xảo
+                                    Và Chúng Đã Xuất Hiện Ở Đây Từ Thế Kỷ Thứ 5
+                                    Đến Thứ 8
+                                </p>
+                            </div>
+                            <a class="btn-read-more" href="#">
+                                Đọc thêm
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="place-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="place-img">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/des-6.jpg"
+                                    alt="place-6"
+                                />
+                            </div>
+                            <div class="item-detail">
+                                <h4 class="place-title">
+                                    Lonavala Và Khandala
+                                </h4>
+                                <p class="place-description">
+                                    Khu Nghỉ Dưỡng Rất Nổi Tiếng, Nằm Giữa Đường
+                                    Cao Tốc Mumbai – Pune.
+                                </p>
+                            </div>
+                            <a class="btn-read-more" href="#">
+                                Đọc thêm
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="place-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="place-img">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/des-7.jpg"
+                                    alt="place-7"
+                                />
+                            </div>
+                            <div class="item-detail">
+                                <h4 class="place-title">Thành Phố Pune</h4>
+                                <p class="place-description">
+                                    Giáo Dục, Nghệ Thuật Và Âm Nhạc Là Trọng Tâm
+                                    Tại Thành Phố Có Nền Văn Hóa Phong Phú Lâu
+                                    Đời Này
+                                </p>
+                            </div>
+                            <a class="btn-read-more" href="#">
+                                Đọc thêm
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="place-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="place-img">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/des-8.jpg"
+                                    alt="place-8"
+                                />
+                            </div>
+                            <div class="item-detail">
+                                <h4 class="place-title">Thành Phố Nashik</h4>
+                                <p class="place-description">
+                                    Là Trung Tâm Hành Hương Lớn Của Người Hindu.
+                                    Nashik Có Sự Pha Trộn Của Nét Cổ Xưa Và Hiện
+                                    Đại
+                                </p>
+                            </div>
+                            <a class="btn-read-more" href="#">
+                                Đọc thêm
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End .places-section -->
+
+            <section class="content-section" id="services-section">
+                <div class="container">
+                    <div class="section-info">
+                        <h4 class="section-sub-title">Dịch Vụ</h4>
+                        <h2 class="section-title">Nâng Cao Trải Nghiệm</h2>
+                    </div>
+                    <div class="services-list">
+                        <div
+                            class="service-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="service-icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="service-title">rộng khắp thế giới</div>
+                            <div class="service-text">some text...</div>
+                        </div>
+                        <div
+                            class="service-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="service-icon">
+                                <i
+                                    class="fa-solid fa-person-walking-with-cane"
+                                ></i>
+                            </div>
+                            <div class="service-title">
+                                Những Cuộc Phiêu Lưu
+                            </div>
+                            <div class="service-text">some text...</div>
+                        </div>
+                        <div
+                            class="service-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="service-icon">
+                                <i class="fa-solid fa-utensils"></i>
+                            </div>
+                            <div class="service-title">Dịch Vụ Ăn Uống</div>
+                            <div class="service-text">some text...</div>
+                        </div>
+                        <div
+                            class="service-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="service-icon">
+                                <i class="fa-solid fa-hotel"></i>
+                            </div>
+                            <div class="service-title">Nghỉ Dưỡng Cao Cấp</div>
+                            <div class="service-text">some text...</div>
+                        </div>
+                        <div
+                            class="service-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="service-icon">
+                                <i class="fa-solid fa-wallet"></i>
+                            </div>
+                            <div class="service-title">Giá Tốt Nhất</div>
+                            <div class="service-text">some text...</div>
+                        </div>
+                        <div
+                            class="service-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="service-icon">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div class="service-title">Hỗ Trợ 24/7</div>
+                            <div class="service-text">some text...</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End .services-section -->
+
+            <section class="content-section" id="gallery-section">
+                <div class="container">
+                    <div class="section-info">
+                        <h4 class="section-sub-title">
+                            Những Bức Ảnh Về Mumbai
+                        </h4>
+                    </div>
+                    <div class="img-list">
+                        <div
+                            class="img-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="img-box">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/gallery-img-1.jpg"
+                                    alt="gallery-img-1"
+                                />
+                            </div>
+                            <div class="img-sub-title">Thành Phố Mumbai</div>
+                            <div class="img-title">
+                                Vườn Quốc Gia Sanjay Gandhi
+                            </div>
+                        </div>
+                        <div
+                            class="img-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="img-box">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/gallery-img-2.jpg"
+                                    alt="gallery-img-2"
+                                />
+                            </div>
+                            <div class="img-title">
+                                Nhà Thờ St John The Evangelist
+                            </div>
+                        </div>
+                        <div
+                            class="img-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="img-box">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/gallery-img-3.jpg"
+                                    alt="gallery-img-3"
+                                />
+                            </div>
+                            <div class="img-sub-title">
+                                Nằm Trên Đỉnh Ngọn Đồi Malabar Ở Mumbai
+                            </div>
+                            <div class="img-title">Vườn Treo Mumbai</div>
+                        </div>
+                        <div
+                            class="img-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="img-box">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/gallery-img-4.jpg"
+                                    alt="gallery-img-4"
+                                />
+                            </div>
+                            <div class="img-sub-title">
+                                Bảo Tàng Viện Của Thành Phố Mumbai
+                            </div>
+                            <div class="img-title">Dr. Bhau Daji Lad</div>
+                        </div>
+                        <div
+                            class="img-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="img-box">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/gallery-img-5.jpg"
+                                    alt="gallery-img-5"
+                                />
+                            </div>
+                            <div class="img-sub-title">
+                                Di Sản Thế Giới Được UNESCO Nhìn Nhận.
+                            </div>
+                            <div class="img-title">Tòa Đô Chánh Mumbai</div>
+                        </div>
+                        <div
+                            class="img-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="img-box">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/gallery-img-6.jpg"
+                                    alt="gallery-img-6"
+                                />
+                            </div>
+                            <div class="img-sub-title">Mumbai</div>
+                            <div class="img-title">Kiến Trúc Thời Victoria</div>
+                        </div>
+                        <div
+                            class="img-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="img-box">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/gallery-img-7.jpg"
+                                    alt="gallery-img-7"
+                                />
+                            </div>
+                            <div class="img-sub-title">
+                                Khách Sạn 5 Sao Ở Mumbai
+                            </div>
+                            <div class="img-title">Khách Sạn Taj Mahal</div>
+                        </div>
+                        <div
+                            class="img-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="img-box">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/gallery-img-8.jpg"
+                                    alt="gallery-img-8"
+                                />
+                            </div>
+                            <div class="img-sub-title">
+                                Phía Đông Thành Phố Mumbai
+                            </div>
+                            <div class="img-title">Hang Động Elephanta</div>
+                        </div>
+                        <div
+                            class="img-item wow animate__animated animate__fadeInUp"
+                        >
+                            <div class="img-box">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/gallery-img-9.jpg"
+                                    alt="gallery-img-9"
+                                />
+                            </div>
+                            <div class="img-sub-title">Mumbai</div>
+                            <div class="img-title">Phiên Chợ Địa Phương</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End .gallery-section -->
+
+            <section class="content-section" id="review-section">
+                <div
+                    class="container wow animate__animated animate__fadeInLeft"
+                >
+                    <div class="section-info">
+                        <h4 class="section-sub-title">
+                            Những Lời Đánh Giá Tốt Nhất
+                        </h4>
+                        <p class="section-detail">
+                            Tất Cả Những Lời Đánh Giá Chúng Tôi Đều Ghi Nhận Và
+                            Tiếp Thu Để Phát Triển. Đây Là Những Đánh Giá Tốt
+                            Nhất Về Chuyến Đi Mumbai Này.
+                        </p>
+                    </div>
+                    <div
+                        class="review-container wow animate__animated animate__fadeInRight"
+                    >
+                        <div class="review-row-1">
+                            <div class="review-item">
+                                <p class="review-text">
+                                    Chuyến Đi Rất Vui, Giá Rất Rẻ. Gọi Tư Vấn
+                                    Rất Nhanh. Tôi Sẽ Quay Lại Đay Môt Lần Nữa
+                                </p>
+                                <div class="reviewer">
+                                    <div class="user-avatar">
+                                        <img
+                                            src="https://stravelhtml.vercel.app/mumbai/images/pic-1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="user-info">
+                                        <div class="user-name">
+                                            Duong Nguyen
+                                        </div>
+                                        <div class="user-career">nội trợ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <p class="review-text">
+                                    Chuyến Đi Rất Vui, Đáng Để Thử. Đồ Ăn Ở Đây
+                                    Rất Ngon. Chắc Chắn Sẽ Quay Lại Vì Đồ Ăn
+                                    Hihi
+                                </p>
+                                <div class="reviewer">
+                                    <div class="user-avatar">
+                                        <img
+                                            src="https://stravelhtml.vercel.app/mumbai/images/pic-2.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="user-info">
+                                        <div class="user-name">Some People</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <p class="review-text">
+                                    Khách Sạn Ở Rất Tuyệt. Thích Hợp Với 1 Chỗ
+                                    Nghỉ Dưỡng.
+                                </p>
+                                <div class="reviewer">
+                                    <div class="user-avatar">
+                                        <img
+                                            src="https://stravelhtml.vercel.app/mumbai/images/pic-3.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="user-info">
+                                        <div class="user-name">Some People</div>
+                                        <div class="user-career">Nằm Nhà</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-row-2">
+                            <div class="review-item">
+                                <p class="review-text">
+                                    Hướng Dẫn Viên Rất Chu Đáo. Mọi Dịch Vụ Đều
+                                    Có Và Rất Thoải Mái
+                                </p>
+                                <div class="reviewer">
+                                    <div class="user-avatar">
+                                        <img
+                                            src="https://stravelhtml.vercel.app/mumbai/images/pic-4.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="user-info">
+                                        <div class="user-name">Some People</div>
+                                        <div class="user-career">...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End .blogs-section -->
+
+            <section class="content-section" id="contact-section">
+                <div class="container">
+                    <div
+                        class="section-info wow animate__animated animate__fadeInLeft"
+                    >
+                        <h4 class="section-sub-title">đánh giá</h4>
+                    </div>
+                    <div
+                        class="section-content wow animate__animated animate__fadeInRight"
+                    >
+                        <figure class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8979839970184!2d105.83245622587252!3d21.036767537502435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aba15ec15d17%3A0x620e85c2cfe14d4c!2zTMSDbmcgQ2jhu6cgdOG7i2NoIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1715337875414!5m2!1svi!2s"
+                                style="border: 0"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </figure>
+                        <div class="contact-form">
+                            <form class="form-contact">
+                                <input type="text" placeholder="Tên của bạn" />
+                                <input
+                                    type="email"
+                                    placeholder="Email liên hệ"
+                                />
+                                <input
+                                    type="number"
+                                    placeholder="Số điện thoại"
+                                />
+                                <input type="text" placeholder="Chủ đề" />
+                                <textarea
+                                    name="comment"
+                                    id="comment"
+                                    placeholder="Viết đánh giá của bạn về chuyến đi..."
+                                ></textarea>
+                                <div class="form-btn">
+                                    <button type="submit" class="btn">
+                                        gửi tới Stravel
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End .blogs-section -->
+
+            <section class="content-section" id="blogs-section">
+                <div class="container">
+                    <div class="section-info section-content">
+                        <h4 class="section-sub-title">Blogs & Posts</h4>
+                        <h2 class="section-title">Tìm Hiểu Thêm Về Mumbai</h2>
+                    </div>
+                    <div class="blogs-list">
+                        <div
+                            class="blog-item wow animate__animated animate__fadeUp"
+                        >
+                            <div class="blog-img">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/blog-1.jpg"
+                                    alt="blog-1"
+                                />
+                            </div>
+                            <div class="item-detail">
+                                <h4 class="blog-title">
+                                    Mang Những Gì Khi Đi Mumbai
+                                </h4>
+                                <p class="blog-description">
+                                    Giấy Tờ Tuỳ Thân, Giấy Xác Minh Tài Chính,
+                                    Visa, Vé Máy Bay, Trang Phục, Đồ Dùng Cá
+                                    Nhân, Balo, Túi Đựng Đồ...
+                                </p>
+                            </div>
+                            <div class="item-footer">
+                                <div class="posted-date">
+                                    <span class="item-icon"
+                                        ><i class="fa-solid fa-clock"></i
+                                    ></span>
+                                    22,11, 2021
+                                </div>
+                                <div class="author">
+                                    <span class="item-icon"
+                                        ><i class="fa-solid fa-user"></i
+                                    ></span>
+                                    By Admin
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="blog-item wow animate__animated animate__fadeUp"
+                        >
+                            <div class="blog-img">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/blog-2.jpg"
+                                    alt="blog-2"
+                                />
+                            </div>
+                            <div class="item-detail">
+                                <h4 class="blog-title">Xin Visa Đi Mumbai</h4>
+                                <p class="blog-description">
+                                    Visa Ai Cập Không Khó Xin, Thủ Tục Đơn Giản
+                                    Gồm Đơn Tải Từ Trang Web Chính Thức Của Đại
+                                    Sứ Quán
+                                </p>
+                            </div>
+                            <div class="item-footer">
+                                <div class="posted-date">
+                                    <span class="item-icon"
+                                        ><i class="fa-solid fa-clock"></i
+                                    ></span>
+                                    22,11, 2021
+                                </div>
+                                <div class="author">
+                                    <span class="item-icon"
+                                        ><i class="fa-solid fa-user"></i
+                                    ></span>
+                                    By Admin
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="blog-item wow animate__animated animate__fadeUp"
+                        >
+                            <div class="blog-img">
+                                <img
+                                    src="https://stravelhtml.vercel.app/mumbai/images/blog-3.jpg"
+                                    alt="blog-3"
+                                />
+                            </div>
+                            <div class="item-detail">
+                                <h4 class="blog-title">
+                                    Phương Tiện Di Chuyển
+                                </h4>
+                                <p class="blog-description">
+                                    Bạn Có Thể Đi Xe Bus, Tàu Lửa, Tàu Thủy Hoặc
+                                    Bất Cứ Phương Tiện Nào Có Thể Di Chuyển Đều
+                                    Được.
+                                </p>
+                            </div>
+                            <div class="item-footer">
+                                <div class="posted-date">
+                                    <span class="item-icon"
+                                        ><i class="fa-solid fa-clock"></i
+                                    ></span>
+                                    22,11, 2021
+                                </div>
+                                <div class="author">
+                                    <span class="item-icon"
+                                        ><i class="fa-solid fa-user"></i
+                                    ></span>
+                                    By Admin
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End .blogs-section -->
+        </main>
+        <footer class="page-footer">
+            <div class="booking-now">
+                <h4 class="footer-sub-title">Cùng STravel</h4>
+                <h2 class="footer-title">Bắt Đầu Chuyến Đi Của Bạn</h2>
+                <p class="footer-detail">
+                    Mỗi Chuyến Đi Đều Là Một Kỷ Niệm Đẹp. Hãy Cùng STravel Ghi
+                    Lại Kỷ Niệm Này !
+                </p>
+                <a href="#" class="btn">đặt ngay</a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-item">
+                    <a href="#" class="logo">
+                        <span class="highlight">S</span>TRAVEL
+                    </a>
+                    <p class="info-text">
+                        Trải Qua 17 Năm Phát Triển Bền Vững, STravel Đã Ghi Dấu
+                        Ấn Của Mình Với Thông Điệp “Nâng Tầm Trải Nghiệm Từng
+                        Chuyến Đi”
+                    </p>
+                    <div class="social-box">
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="#"
+                                    ><i class="fa-brands fa-facebook-f"></i
+                                ></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#"
+                                    ><i class="fa-brands fa-twitter"></i
+                                ></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#"
+                                    ><i class="fa-brands fa-instagram"></i
+                                ></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#"
+                                    ><i class="fa-brands fa-linkedin-in"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-item-title">Chuyển Hướng Nhanh</h3>
+                    <nav class="navbar">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="#home-section"
+                                    ><i class="fa-solid fa-arrow-right"></i
+                                    >Trang Chủ</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about-section"
+                                    ><i class="fa-solid fa-arrow-right"></i
+                                    >About</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#places-section"
+                                    ><i class="fa-solid fa-arrow-right"></i>Điểm
+                                    Đến</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services-section"
+                                    ><i class="fa-solid fa-arrow-right"></i>Dịch
+                                    Vụ</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#gallery-section"
+                                    ><i class="fa-solid fa-arrow-right"></i
+                                    >Ảnh</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#blogs-section"
+                                    ><i class="fa-solid fa-arrow-right"></i
+                                    >Blogs</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-item-title">Liên Hệ</h3>
+                    <nav class="navbar">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <i class="fa-solid fa-map"></i>
+                                Hà Nội, Việt Nam
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-phone-flip"></i>
+                                +84-986-921-104
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                Duongcoilc2004@Gmail.Com
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-clock"></i>
+                                7:00am - 10:00pm
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-item-title">Tin Tức Mới</h3>
+                    <p class="info-text">
+                        Đăng Ký Để Nhận Tin Tức Về Ưu Đãi Sớm Nhất!
+                    </p>
+                    <form class="regis-form">
+                        <input type="email" placeholder="Email của bạn" />
+                        <button type="submit">Đăng Ký</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-text">
+                Created By <span>STravel</span> | All Rights Reserved!
+            </div>
+        </footer>
+    </body>
+</html>

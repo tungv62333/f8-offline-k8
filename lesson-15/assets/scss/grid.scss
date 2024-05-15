@@ -1,0 +1,59 @@
+$spacer: 1rem;
+
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+$grid-settings: (
+    g-0: 0,
+    g-1: 0.25rem,
+    g-2: 0.5rem,
+    g-3: 1rem,
+    g-4: 1.5rem,
+    g-5: 3rem
+);
+
+$column-sizes: (
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+);
+
+@each $breakpoint, $width in $breakpoints {
+    @media screen and (min-width: $width) {
+        @for $i from 1 through 12 {
+            .col-#{$breakpoint}-#{$i} {
+                flex: 0 0 percentage($i / 12);
+                max-width: percentage($i / 12);
+            }
+        }
+    }
+}
+
+@each $setting, $value in $grid-settings {
+    .row.#{$setting} {
+        margin-left: calc(-#{$value} / 2);
+        margin-right: calc(-#{$value} / 2);
+    }
+}
+
+[class^="col-"] {
+    box-sizing: border-box;
+    padding-left: calc(#{$spacer} / 2);
+    padding-right: calc(#{$spacer} / 2);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

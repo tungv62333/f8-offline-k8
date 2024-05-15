@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+html {
+    font-size: 62.5%;
+    font-family: "Sofia Sans", sans-serif;
+}
+
+header {
+    padding: 2rem 1rem;
+}
+
+.logo-wrapper {
+    width: 9.8rem;
+    height: auto;
+    margin-left: 5rem;
+}
+.logo-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.sidebar-container {
+    padding: 3rem 5rem;
+}
+
+.sidebar {
+    padding: 6rem 1rem;
+    text-align: left;
+}
+
+.sidebar .sidebar-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+
+.sidebar .sidebar-list {
+    margin-top: 3rem;
+}
+.sidebar .sidebar-list .sidebar-item {
+    padding: 1.5rem 0;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.sidebar-list .sidebar-item a {
+    display: flex;
+    text-align: center;
+}
+.sidebar-list .sidebar-item a .icon-box {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 1rem;
+}
+.sidebar-list .sidebar-item a .icon-box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.content-container {
+    background-color: #ccc;
+    height: 1000px;
+}
+
+.box-1 .row {
+    width: 56.5rem;
+}
+.box-1 .row img {
+    width: 100%;
+    border-radius: 1.6rem;
+}
+.box-2 div {
+    width: 100%;
+    height: 40rem;
+}
+.box-2 .row img {
+    width: 50%;
+    border-radius: 1.6rem;
+}

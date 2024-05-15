@@ -1,0 +1,59 @@
+@media screen and (max-width: 1500.98px) {
+    .dot-pattern {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1365.98px) {
+    .login-section .container {
+        height: 1500px;
+    }
+
+    .page-form div .form-img {
+        display: none;
+    }
+    .login-section .container .page-info {
+        position: absolute;
+        top: 200px;
+        left: calc(50% - 224px);
+    }
+    .container .page-info .page-description {
+        display: none;
+    }
+
+    .container .page-form {
+        position: absolute;
+        z-index: 3;
+        top: 500px;
+        left: calc(50% - 243px);
+    }
+    .container .page-form > div {
+        transition: none;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .container .page-info .page-title {
+        font-size: 6rem;
+    }
+    .page-info .switch-button label {
+        width: 48vw;
+    }
+    .container .page-form {
+        left: 2vw;
+        width: 96vw;
+    }
+    .container .page-form > div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 501px) {
+    .page-info .switch-button label {
+        width: 47vw;
+    }
+    .container .page-form {
+        left: 3vw;
+        width: 94vw;
+    }
+}

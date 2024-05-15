@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Asap", sans-serif;
+}
+
+.contact-section {
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.contact-section .form-header .form-title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-section .form-header p {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.contact-section .contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-form .input-field-wrapper {
+    position: relative;
+    width: 49%;
+    height: 60px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(235, 233, 233);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-form .input-field-wrapper .input-field {
+    position: absolute;
+    padding: 10px 20px 0;
+    inset: 0;
+    font-size: 1.8rem;
+}
+
+.contact-form .input-field-wrapper label {
+    display: inline-block;
+    position: absolute;
+    top: 21px;
+    left: 20px;
+    color: #ccc;
+    font-size: 1.8rem;
+    cursor: text;
+    transition: 0.3s ease;
+    transition-property: top, font-size;
+}
+
+.contact-form .input-field-wrapper select.input-field {
+    padding: 0 20px;
+    color: #ccc;
+}
+
+.contact-form .input-field-wrapper select.input-field option {
+    color: #ccc;
+}
+
+.contact-form .textarea-field {
+    resize: none;
+    width: 100%;
+    height: 200px;
+}
+
+.contact-form .input-field-wrapper.textarea-field textarea {
+    padding-top: 20px;
+}
+
+.contact-form .btn {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 15px 20px;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #4d77d9;
+    border-radius: 99px;
+    cursor: pointer;
+}
+
+.contact-form .input-field-wrapper:focus-within {
+    border: 2px solid #4d77d9;
+}
+
+.contact-form .input-field-wrapper .input-field:focus ~ label,
+.contact-form
+    .input-field-wrapper
+    .input-field:not(:placeholder-shown)
+    ~ label {
+    top: 3px;
+    font-size: 1.5rem;
+}
