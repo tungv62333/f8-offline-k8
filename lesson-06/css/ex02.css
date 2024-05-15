@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    background-color: #ebf5fe;
+}
+
+.service-section {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+    font-family: "Roboto", sans-serif;
+}
+
+.section-item {
+    background-color: #fff;
+    border-radius: 4px;
+    width: 30%;
+    height: 230px;
+    box-shadow: 0 4px 8px #666666;
+    margin-bottom: 36px;
+    padding: 28px;
+}
+
+.section-item:hover {
+    border: 2px solid #e45b7b;
+}
+
+.item-header {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.item-header .item-img {
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+    margin-right: 12px;
+}
+
+.ui-ux {
+    background: linear-gradient(
+        90deg,
+        rgba(228, 91, 123, 1) 0%,
+        rgba(227, 119, 90, 1) 100%
+    );
+}
+
+.theme-development {
+    background: linear-gradient(
+        90deg,
+        rgba(80, 166, 164, 1) 0%,
+        rgba(121, 213, 160, 1) 100%
+    );
+}
+
+.marketing {
+    background: linear-gradient(
+        90deg,
+        rgba(227, 140, 52, 1) 0%,
+        rgba(244, 192, 74, 1) 100%
+    );
+}
+
+.web-design {
+    background: linear-gradient(
+        90deg,
+        rgba(55, 110, 209, 1) 0%,
+        rgba(109, 143, 243, 1) 100%
+    );
+}
+
+.responsive {
+    background: linear-gradient(
+        90deg,
+        rgba(116, 37, 205, 1) 0%,
+        rgba(178, 86, 231, 1) 100%
+    );
+}
+
+.support {
+    background: linear-gradient(
+        90deg,
+        rgba(107, 139, 46, 1) 0%,
+        rgba(142, 191, 81, 1) 100%
+    );
+}
+
+.item-header h3 {
+    font-size: 24px;
+}
+
+.item-description {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+}
+
+.section-item button {
+    background-color: inherit;
+    text-transform: capitalize;
+    color: #336aeb;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+button {
+    cursor: pointer;
+}

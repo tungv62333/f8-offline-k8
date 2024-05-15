@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+.mail-section {
+    background-color: #313642;
+    width: 100%;
+    height: 600px;
+}
+
+.envelope {
+    position: relative;
+    top: 225px;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 150px;
+    transform: none;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.envelope .envelope-body {
+    background-color: #ca5047;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.envelope .envelope-body-left {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border: solid;
+    border-width: 75px 150px;
+    border-color: transparent transparent #e96056 #e96056;
+}
+
+.envelope .envelope-body-right {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border: solid;
+    border-width: 75px 150px;
+    border-color: transparent #cc534a #cc534a transparent;
+}
+
+.envelope-flap {
+    position: absolute;
+    inset: 0;
+    width: 0;
+    z-index: 2;
+    height: 0;
+    border: solid;
+    border-width: 75px 150px;
+    border-color: #da5147 transparent transparent transparent;
+    transform: none;
+    transform-origin: 0 0;
+    transition: transform 0.6s 1s ease-in-out, z-index 1s 1s ease-in-out;
+}
+
+.envelope .letter-box {
+    width: 260px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    bottom: 75px;
+    overflow: hidden;
+}
+
+.envelope .letter {
+    width: 260px;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    transform: none;
+    transition: transform 0.6s 0.6s ease-in-out;
+}
+
+.envelope .letter .letter-border {
+    width: 300px;
+    height: 15px;
+    overflow: hidden;
+}
+
+.letter .letter-border .border-item {
+    display: inline-block;
+    width: 15px;
+    height: 100%;
+    transform: skewX(-45deg);
+    background-color: #ca5047;
+    margin-right: 15px;
+}
+
+.letter .letter-content .letter-title {
+    width: 100px;
+    height: 15px;
+    background-color: #ca5047;
+    margin: 15px 5px;
+}
+.letter .letter-content .letter-sub-title {
+    width: 50px;
+    height: 15px;
+    background-color: #ca5047;
+    margin: 15px 5px;
+}
+
+.letter .letter-content .letter-circle {
+    background-color: #edd0d0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 50px 0 0 150px;
+}
+
+.envelope:hover {
+    transform: translateY(80px);
+}
+
+.envelope:hover .envelope-flap {
+    transform: rotateX(-180deg);
+    z-index: 1;
+    transition: transform 0.6s ease-in-out, z-index 1s ease-in-out;
+}
+
+.envelope:hover .letter {
+    transform: translateY(calc(-50% - 20px));
+}

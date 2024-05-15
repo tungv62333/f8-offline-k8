@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Asap", sans-serif;
+}
+
+.project-banner {
+    position: relative;
+}
+
+.project-banner .background-banner img {
+    width: 100%;
+}
+
+.project-content {
+    position: absolute;
+    padding: 30px 24px;
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 30%;
+    left: 15%;
+    border-radius: 5px;
+}
+
+.project-content .project-title {
+    color: #bf4240;
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+}
+
+.project-content .project-detail {
+    font-size: 1.4rem;
+    color: #3f3424;
+}
+
+.project-content .project-detail ul {
+    list-style: none;
+}
+
+.project-detail ul li {
+    margin-bottom: 6px;
+}
+
+.project-content .project-address {
+    font-size: 1.8rem;
+    padding-top: 6px;
+    padding-bottom: 12px;
+}
+
+.project-content .project-address a {
+    color: #3f3424;
+    text-decoration: none;
+}
+
+.project-content .project-address a i {
+    padding-right: 5px;
+}
+
+.project-price a {
+    display: inline-block;
+    top: calc(100% - 30px);
+    left: 60%;
+    position: absolute;
+    background-color: #bf4240;
+    padding: 0 24px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 2.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 500;
+}

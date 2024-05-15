@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+a {
+    color: rgb(46, 46, 46);
+}
+
+p {
+    color: rgb(103, 103, 103);
+}
+
+/* btn css */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: rgb(248, 96, 97);
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    width: 186px;
+    height: 72px;
+    border-radius: 15px;
+    transition: 0.3s linear;
+    transition-property: color, background-color;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #fff;
+    color: rgb(248, 96, 97);
+    border: 1px solid rgb(248, 96, 97);
+}
+
+/* nav css */
+.page-header nav {
+    width: 100%;
+    height: 60px;
+}
+
+.page-header nav .container {
+    display: flex;
+    width: 68%;
+    margin: 40px auto;
+    align-items: center;
+    position: relative;
+}
+
+.page-header nav .container .grover-logo {
+    cursor: pointer;
+}
+
+nav .container .nav-list {
+    display: flex;
+    padding-left: 310px;
+    height: 60px;
+}
+
+.container .nav-list .nav-item {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.container .nav-list .nav-item a {
+    display: block;
+    color: #4d4d4d;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    margin-left: 30px;
+}
+
+.container .nav-list .nav-item a:hover {
+    color: #f55253;
+}
+
+.container .nav-list .nav-item:first-child a {
+    color: #f55253;
+}
+
+.container .nav-list .nav-item:last-child {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+}
+
+.nav-list .nav-item:last-child .search-box {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    padding: 0 10px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 1.95px 1.95px 2.6px;
+    position: relative;
+    right: 10px;
+}
+
+.nav-list .nav-item:last-child .search-box i {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    height: 100%;
+    padding: 0 5px;
+    color: rgb(78, 78, 78);
+}
+
+.nav-list .nav-item:last-child .search-box i.cart {
+    font-size: 2.2rem;
+}
+
+.nav-list .nav-item:last-child .search-box input {
+    height: 100%;
+    padding-left: 5px;
+}
+
+.nav-list .nav-item:last-child .search-box::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 54px;
+    width: 0px;
+    height: 28px;
+    border: solid rgb(241, 241, 241);
+    border-width: 0 1px;
+}
+
+.nav-list .nav-item:last-child .search-box .item-count {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #f54b4b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* header css */
+.page-header .order-header {
+    display: flex;
+    margin-top: 90px;
+    width: 100%;
+    padding: 0 16% 130px;
+}
+
+.page-header .order-header .order-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.order-header .order-content .more-than {
+    display: flex;
+    background: #fdecec;
+    border-radius: 99px;
+    width: 210px;
+    height: 48px;
+    padding: 12px 16px;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 48px;
+}
+
+.order-header .order-content .more-than h4 {
+    font-weight: 500;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.order-header .order-content .order-description {
+    font-family: "Poppins", sans-serif;
+}
+
+.order-content .order-description h1 {
+    font-size: 7.4rem;
+    line-height: 88px;
+    margin-bottom: 24px;
+}
+
+.order-content .order-description h1 span {
+    font-weight: 500;
+    color: rgb(245, 71, 72);
+}
+
+.order-content .order-description p {
+    font-size: 1.8rem;
+    width: 80%;
+    margin-bottom: 48px;
+}
+
+.order-header .btn-order {
+    display: flex;
+}
+
+.order-header .btn-order .btn-order-process {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.order-header .btn-order .btn-order-process .btn-triangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fdc55e;
+    background: #ffffff;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 1.95px 1.95px 2.6px;
+}
+
+.page-header .order-header .order-img {
+    width: 50%;
+    overflow: hidden;
+}
+
+.page-header .order-header .order-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* service section css */
+
+.service-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fef5f5;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 130px;
+}
+
+.service-section .service-section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-section .service-section-header .service-section-detail {
+    color: rgb(245, 71, 72);
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 120px 0 10px;
+}
+
+.service-section .service-section-header .service-section-title {
+    font-size: 4rem;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.service-section .service-list {
+    display: flex;
+}
+
+.service-list .service-item {
+    position: relative;
+    width: 300px;
+    height: 330px;
+    margin: 0 30px;
+}
+
+.service-list .service-item .overlay {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 295px;
+    height: 325px;
+    border-radius: 20px;
+    background-color: #fe6a6a;
+    transform-origin: 0 10px;
+    transform: rotate(0);
+    transition: all 0.3s linear;
+}
+
+.service-list .service-item:hover .overlay {
+    transform: rotate(-5deg);
+    top: 1px;
+    left: 20px;
+}
+
+.service-list .service-item .service-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    border-radius: 20px;
+    background: #fff;
+    inset: 0;
+    padding: 40px;
+    z-index: 1;
+}
+
+.service-item .service-item-content img {
+    height: 25%;
+    margin: 10px 0 70px;
+}
+
+.service-item .service-item-content .service-item-title {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.service-item .service-item-content .service-item-description {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* about section css */
+
+.about-section {
+    padding: 30px 16% 30px;
+    display: flex;
+}
+
+.about-section .about-section-img {
+    width: 100%;
+}
+.about-section .about-section-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.about-section .about-section-content {
+    font-family: "Poppins", sans-serif;
+    margin-top: 200px;
+}
+
+.about-section .about-section-content .about-section-detail {
+    color: rgb(3, 166, 107);
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about-section .about-section-content .about-section-title {
+    font-size: 4rem;
+    width: 85%;
+    line-height: 54px;
+    margin-bottom: 30px;
+}
+
+.about-section .about-section-content .about-section-description {
+    font-size: 1.8rem;
+    width: 85%;
+    margin-bottom: 40px;
+}
+
+/* delivery section */
+
+.delivery-section {
+    padding: 0 16% 60px;
+    display: flex;
+}
+
+.delivery-section .delivery-section-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.delivery-section .delivery-section-content {
+    font-family: "Poppins", sans-serif;
+    margin-top: 200px;
+}
+
+.delivery-section .delivery-section-content .delivery-section-detail {
+    color: rgb(249, 186, 69);
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.delivery-section .delivery-section-content .delivery-section-title {
+    font-size: 4rem;
+    width: 85%;
+    line-height: 54px;
+    margin-bottom: 30px;
+}
+
+.delivery-section .delivery-section-content .delivery-section-description {
+    font-size: 1.8rem;
+    width: 85%;
+    margin-bottom: 40px;
+}
+
+/* download section css */
+
+.download-section {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: #fef5f5;
+    font-family: "Poppins", sans-serif;
+    padding: 100px 16%;
+}
+
+.download-section .download-section-img {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.download-section .download-section-img img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 200px;
+}
+
+.download-section .download-section-content {
+    font-family: "Poppins", sans-serif;
+}
+
+.download-section .download-section-content .download-section-detail {
+    color: #f54748;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.download-section .download-section-content .download-section-title {
+    font-size: 4rem;
+    width: 85%;
+    line-height: 54px;
+    margin-bottom: 20px;
+}
+
+.download-section .download-section-content .download-section-description {
+    font-size: 1.8rem;
+    width: 85%;
+    margin-bottom: 60px;
+}
+
+.download-section .download-section-content .btn-group {
+    display: flex;
+}
+
+.download-section .download-section-content a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border: 1px solid rgb(238, 220, 220);
+    width: 200px;
+    height: 82px;
+    border-radius: 15px;
+    transition: 0.3s linear;
+    transition-property: color, background-color;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.download-section .download-section-content a img {
+    padding-right: 15px;
+}
+
+/* page-footer css */
+
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    padding: 100px 16%;
+}
+.page-footer .footer-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.page-footer .footer-list .footer-item {
+    width: 23%;
+    font-size: 1.6rem;
+}
+
+.page-footer .footer-list .footer-item:last-child {
+    width: 20%;
+}
+
+.footer-list .footer-item .footer-item-title {
+    height: 42px;
+    margin-bottom: 10px;
+}
+
+.footer-list .footer-item div + p {
+    padding: 10px 0;
+}
+
+.footer-item-nav .item-list .item {
+    padding: 10px 0;
+}
+.footer-item-nav .item-list .item a {
+    color: #747474;
+    transition: color 0.2s linear;
+}
+.footer-item-nav .item-list .item a:hover {
+    color: #000;
+}
+
+.footer-item-nav .item-list a {
+    color: rgb(103, 103, 103);
+}
+
+.page-footer .footer-2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.page-footer .footer-2 p {
+    flex: 1;
+    color: #8c8c8c;
+}
+
+.page-footer .footer-2 a {
+    color: #747474;
+    padding-left: 20px;
+    font-weight: 500;
+    transition: color 0.2s linear;
+}
+
+.page-footer .footer-2 a:hover {
+    color: #000;
+}

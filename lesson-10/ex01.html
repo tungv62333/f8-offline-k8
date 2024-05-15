@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lesson 10 - Ex 01</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="css/ex01.css" />
+    </head>
+    <body>
+        <section class="burger-menu">
+            <div class="bg-menu">
+                <h2 class="section-title">#1 burger menu</h2>
+                <p class="section-description">
+                    inspired by <span>google material design</span>
+                </p>
+            </div>
+            <input type="checkbox" name="panel" id="panel" hidden />
+            <label for="panel" class="panel">
+                <div class="menu-icon-box">
+                    <div class="menu-icon"></div>
+                </div>
+                <div class="back-icon">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </label>
+            <nav class="burger-nav">
+                <div class="bg-nav"></div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <input type="radio" name="click" id="home" hidden />
+                        <label for="home"> home </label>
+                    </li>
+                    <li class="nav-item">
+                        <input type="radio" name="click" id="about" hidden />
+                        <label for="about"> about </label>
+                    </li>
+                    <li class="nav-item">
+                        <input
+                            type="radio"
+                            name="click"
+                            id="portfolio"
+                            hidden
+                        />
+                        <label for="portfolio"> portfolio </label>
+                    </li>
+                    <li class="nav-item">
+                        <input type="radio" name="click" id="contact" hidden />
+                        <label for="contact"> contact </label>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <div class="content"></div>
+    </body>
+</html>
