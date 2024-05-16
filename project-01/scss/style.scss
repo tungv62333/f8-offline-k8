@@ -9,8 +9,8 @@
 @use "components/cart_item";
 
 // Layout
-@use "layouts/footer";
 @use "layouts/header";
+@use "layouts/footer";
 
 // Pages
 @use "pages/about";
@@ -19,8 +19,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-html {
-    font-size: 62.5%;
-    font-family: "Inter", sans-serif;
-}
+
+
+
+
 
