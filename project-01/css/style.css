@@ -130,6 +130,7 @@ main {
 
 #home-section {
   position: relative;
+  width: 100%;
 }
 #home-section .content-box {
   display: flex;
@@ -163,6 +164,7 @@ main {
 #home-section .image-box .home-image {
   width: 100%;
   position: absolute;
+  z-index: 1;
   inset: 0;
   left: -20%;
 }
@@ -172,7 +174,7 @@ main {
 #home-section .image-box .text-overlay {
   position: absolute;
   top: calc(50% - 16rem);
-  right: 0;
+  right: -10%;
   transform: rotate(90deg);
   color: #C0E7AC;
   font-size: 16rem;
