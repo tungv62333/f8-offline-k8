@@ -14,12 +14,13 @@
 
 .container {
     max-width: var(--container-width);
+    margin-inline: auto;
 }
 .row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-inline: calc(0px - var(--column-space) / 2);
+    /* margin-inline: calc(0px - var(--column-space) / 2); */
 }
 .row.g-0 {
     --column-space: 0;

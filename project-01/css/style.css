@@ -131,6 +131,7 @@ main {
 #home-section {
   position: relative;
   width: 100%;
+  padding-bottom: 8rem;
 }
 #home-section .content-box {
   display: flex;
@@ -148,7 +149,7 @@ main {
 #home-section .content-box .content-description {
   width: 45rem;
   color: var(--Content, #2C2C2C);
-  font-size: 16px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
   line-height: 20.417px;
@@ -181,6 +182,237 @@ main {
   font-weight: 800;
   line-height: 1;
   text-align: left;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-section .section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.page-section .section-header .section-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  padding-bottom: 3rem;
+}
+.page-section .section-header .section-description {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: normal;
+  width: 42%;
+}
+.page-section .section-content {
+  width: 100%;
+}
+
+#rewards-section {
+  padding: 0 12.5%;
+  position: relative;
+}
+#rewards-section::before {
+  content: "";
+  display: block;
+  width: 23rem;
+  height: 23rem;
+  border-radius: 50%;
+  background-color: #DCFFCA;
+  position: absolute;
+  top: 12rem;
+  left: 12.5%;
+}
+#rewards-section::after {
+  content: "";
+  display: block;
+  width: 23rem;
+  height: 23rem;
+  border-radius: 50%;
+  background-color: #FFD5BD;
+  position: absolute;
+  right: 12.5%;
+  bottom: 0;
+}
+#rewards-section .rewards-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  padding: 4rem 8rem;
+}
+#rewards-section .rewards-box .row {
+  align-items: center;
+  width: 100%;
+}
+#rewards-section .rewards-box .reward-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 34rem;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: -5.83px 8.33px 72.5px 0px rgba(54, 54, 54, 0.1215686275);
+}
+#rewards-section .rewards-box .reward-item .img-box {
+  position: absolute;
+  top: 8rem;
+  width: 8.4rem;
+  height: 8.4rem;
+}
+#rewards-section .rewards-box .reward-item .img-box img {
+  width: 100%;
+  object-fit: cover;
+}
+#rewards-section .rewards-box .reward-item .reward-count {
+  font-size: 4.4rem;
+  font-weight: 800;
+  line-height: 5.2rem;
+  padding-top: 10.4rem;
+}
+#rewards-section .rewards-box .reward-item .reward-detail {
+  font-size: 2rem;
+  line-height: 3rem;
+  padding-top: 2rem;
+}
+#rewards-section .rewards-box [class^=col-]:nth-child(2) .reward-item {
+  display: flex;
+  height: 39.2rem;
+  padding-top: 2rem;
+}
+#rewards-section .rewards-box [class^=col-]:nth-child(2) .reward-item .reward-count {
+  padding-top: 12.4rem;
+}
+
+#products-section {
+  padding: 0 12.5%;
+}
+#products-section .section-content {
+  padding: 4rem 8rem;
+}
+#products-section .section-content .product-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 0;
+}
+#products-section .section-content .product-item .product-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+}
+#products-section .section-content .product-item .product-img::before {
+  content: "";
+  display: block;
+  width: 65%;
+  padding-top: 65%;
+  border-radius: 50%;
+  background-color: #FFD5BD;
+  position: absolute;
+  bottom: 35%;
+}
+#products-section .section-content .product-item .product-img img {
+  width: 60%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+#products-section .section-content .product-item .product-detail {
+  text-align: center;
+}
+#products-section .section-content .product-item .product-detail .product-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#products-section .section-content .product-item .product-detail .product-title::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 0;
+  border: 1px solid #a3a3a3;
+  margin: 1rem 0;
+}
+#products-section .section-content .product-item .product-detail .product-quantity {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #656565;
+}
+#products-section .section-content .product-item .product-detail .product-price {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000;
+  margin: 1rem 0;
+}
+#products-section .section-content .product-item .product-detail .product-price .price {
+  font-size: 2.4rem;
+}
+#products-section .section-content .btn-add-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+#products-section .section-content .btn-add-cart button {
+  background-color: #46B20F;
+  color: #fff;
+  border-radius: 0.6rem;
+  width: 18rem;
+  height: 4.8rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+#products-section .section-content .btn-add-cart button:hover {
+  background-color: green;
+  color: #fff;
+}
+
+#news-section {
+  padding: 0 12.5%;
+}
+#news-section .section-content {
+  padding: 4rem 0;
+}
+#news-section .section-content .news-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#news-section .section-content .news-item .news-img {
+  width: 100%;
+}
+#news-section .section-content .news-item .news-img img {
+  width: 100%;
+}
+#news-section .section-content .news-item .news-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+#news-section .section-content .news-item .news-info .news-author {
+  flex: 1;
+  color: #46B20F;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+#news-section .section-content .news-item .news-info .posted-date {
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

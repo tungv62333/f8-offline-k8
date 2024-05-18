@@ -1,5 +1,5 @@
 // Partials
-@use "partials/variables";
+@use "partials/variables" as v;
 @use "partials/reset";
 @use "partials/mixin";
 @use "partials/base";
@@ -17,10 +17,244 @@
 @use "pages/home";
 @use "pages/product";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
+// Section CSS
+.page-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .section-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        .section-title {
+            font-size: 3.2rem;
+            font-weight: 800;
+            padding-bottom: 3rem;
+        }
+        .section-description {
+            font-size: 1.6rem;
+            line-height: 2rem;
+            font-weight: normal;
+            width: 42%;
+        }
+    }
+    .section-content {
+        width: 100%;
+    }
+}
 
+// Rewards Section CSS
+#rewards-section {
+    padding: v.$paddingSection;
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        width: 23rem;
+        height: 23rem;
+        border-radius: 50%;
+        background-color: v.$greenSub;
+        position: absolute;
+        top: 12rem;
+        left: 12.5%;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 23rem;
+        height: 23rem;
+        border-radius: 50%;
+        background-color: v.$orange;
+        position: absolute;
+        right: 12.5%;
+        bottom: 0;
+    }
 
+    .rewards-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        background-color: transparent;
+        padding: 4rem 8rem;
+        .row {
+            align-items: center;
+            width: 100%;
+        }
+        .reward-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-radius: 0.4rem;
+            width: 100%;
+            height: 34rem;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: -5.83px 8.33px 72.5px 0px #3636361f;
 
+            .img-box {
+                position: absolute;
+                top: 8rem;
+                width: 8.4rem;
+                height: 8.4rem;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .reward-count {
+                font-size: 4.4rem;
+                font-weight: 800;
+                line-height: 5.2rem;
+                padding-top: 10.4rem;
+            }
+            .reward-detail {
+                font-size: 2rem;
+                line-height: 3rem;
+                padding-top: 2rem;
+            }
+        }
+        [class^="col-"]:nth-child(2) {
+            .reward-item {
+                display: flex;
+                height: 39.2rem;
+                padding-top: 2rem;
+                .reward-count {
+                    padding-top: 12.4rem;
+                }
+            }
+        }
+    }
+}
 
+// Product Section CSS
+#products-section {
+    padding: v.$paddingSection;
+    .section-content {
+        padding: 4rem 8rem;
+        .product-item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8rem 0;
+            .product-img {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                background-color: transparent;
+                position: relative;
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 65%;
+                    padding-top: 65%;
+                    border-radius: 50%;
+                    background-color: v.$orange;
+                    position: absolute;
+                    bottom: 35%;
+                }
+                img {
+                    width: 60%;
+                    object-fit: cover;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+            .product-detail {
+                text-align: center;
+                .product-title {
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                    line-height: 2.8rem;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 3rem;
+                        height: 0;
+                        border: 1px solid #a3a3a3;
+                        margin: 1rem 0;
+                    }
+                }
+                .product-quantity {
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    color: #656565;
+                }
+                .product-price {
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    color: #000;
+                    margin: 1rem 0;
 
+                    .price {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+        .btn-add-cart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 1rem;
+            button {
+                background-color: v.$greenMain;
+                color: #fff;
+                border-radius: 0.6rem;
+                width: 18rem;
+                height: 4.8rem;
+                font-size: 1.6rem;
+                cursor: pointer;
+                &:hover {
+                    background-color: green;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// News Section CSS
+#news-section {
+    padding: v.$paddingSection;
+    .section-content {
+        padding: 4rem 0;
+        .news-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .news-img {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            .news-info {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                .news-author {
+                    flex: 1;
+                    color: v.$greenMain;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                }
+                .posted-date {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
