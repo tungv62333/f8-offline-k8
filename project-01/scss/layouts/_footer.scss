@@ -1,0 +1,82 @@
+@use "../partials/variables" as v;
+
+.page-footer {
+    padding: 2rem 14.5%;
+    background-color: #f2ffec;
+    display: flex;
+    flex-direction: column;
+    color: v.$textColor;
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    .footer-box-1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem 0;
+        .logo-img {
+            padding-bottom: 2rem;
+        }
+        .footer-item-title {
+            color: v.$greenMain;
+            font-weight: 600;
+            line-height: 2.2rem;
+            padding-bottom: 2rem;
+        }
+        .footer-item-content {
+            .footer-item-nav {
+                li {
+                    padding-bottom: 1.2rem;
+                    a {
+                        &:hover {
+                            color: green;
+                        }
+                    }
+                }
+            }
+            p {
+                padding-bottom: 1.2rem;
+                display: flex;
+                align-items: center;
+                .footer-item-icon {
+                    width: 2rem;
+                    height: 2rem;
+                    margin-right: 0.6rem;
+                }
+            }
+            .footer-item-text-bold {
+                font-weight: 600;
+            }
+        }
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 0;
+            border: 1px solid #a3a3a3;
+            margin-top: 6rem;
+        }
+    }
+    .footer-box-2 {
+        display: flex;
+        align-items: center;
+        .img-box {
+            flex: 1;
+        }
+        .social-link {
+            ul {
+                display: flex;
+                li {
+                    margin-right: 2rem;
+                    a {
+                        font-size: 2.2rem;
+                        display: block;
+                        background-color: #dcffca;
+                        padding: 1rem;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
