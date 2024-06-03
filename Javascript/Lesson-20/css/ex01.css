@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 160px;
+    height: 160px;
+    border: 1px solid black;
+    background-color: #ccc;
+}
+.black-box {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+.white-box {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+
+.ex07-wrapper {
+    display: flex;
+}
+.ex07-wrapper div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
