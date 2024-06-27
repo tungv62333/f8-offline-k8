@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tuần 27</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/ex01.css" />
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <div class="login-container">
+            <div class="logo-box">
+                <img src="images/logo.png" alt="Dân Trí" class="logo" />
+            </div>
+            <div class="tabs">
+                <button class="active" id="login-tab">Đăng nhập</button>
+                <button id="register-tab">Đăng ký</button>
+            </div>
+            <div class="form-container active" id="login-form">
+                <span class="form-text">với các tài khoản mạng xã hội</span>
+                <div class="social-login">
+                    <a
+                        href="https://www.google.com/"
+                        class="google"
+                        target="_blank"
+                    >
+                        <img
+                            src="https://cdnweb.dantri.com.vn/dist/602a5aca41bdeb805571.svg"
+                            alt="Google"
+                        />
+                        Google
+                    </a>
+                    <a
+                        href="https://www.facebook.com/"
+                        class="facebook"
+                        target="_blank"
+                    >
+                        <img
+                            src="https://cdnweb.dantri.com.vn/dist/05804407650f4479d9ef.svg"
+                            alt="Facebook"
+                        />
+                        Facebook
+                    </a>
+                </div>
+                <form class="form-login">
+                    <input type="email" id="login-email" placeholder="Email" />
+                    <input
+                        type="password"
+                        id="login-password"
+                        placeholder="Mật khẩu"
+                    />
+                    <a href="#">Quên mật khẩu?</a>
+                    <button class="btn-login" type="submit">Đăng nhập</button>
+                </form>
+            </div>
+            <div class="form-container" id="register-form">
+                <span class="form-text"
+                    >Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!</span
+                >
+                <form class="form-register">
+                    <label for="register-name">Họ và tên</label>
+                    <input type="text" id="name" placeholder="Họ và tên" />
+                    <label for="register-email">Email</label>
+                    <input type="email" placeholder="Email" />
+                    <label for="register-password">Mật khẩu</label>
+                    <input type="password" placeholder="Mật khẩu" />
+                    <button class="btn-register" type="submit">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+        <script src="js/ex01.js"></script>
+    </body>
+</html>
