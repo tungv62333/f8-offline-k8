@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.player {
+    width: 80%;
+    margin: 30px auto;
+}
+.player .play-action {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.player .play-action i {
+    cursor: pointer;
+}
+.player .play-timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.progress-bar {
+    width: 100%;
+    position: relative;
+    height: 10px;
+    background: gray;
+    cursor: pointer;
+}
+.progress-bar:hover {
+    background: goldenrod;
+}
+.progress-bar .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: red;
+}
+.progress-bar .progress span {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: -6px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: blueviolet;
+    border-radius: 50%;
+}
+.progress-bar .timer {
+    color: #fff;
+    background: #000;
+    font-size: 0.5rem;
+    display: none;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    translate: -50%;
+}
