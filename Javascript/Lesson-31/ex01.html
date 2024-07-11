@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Giỏ hàng</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/ex01.css" />
+    </head>
+    <body>
+        <!-- Products -->
+        <h2>DANH SÁCH SẢN PHẨM</h2>
+        <table id="product-list">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Thêm vào giỏ</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <!-- Cart -->
+        <h2>GIỎ HÀNG</h2>
+        <table id="cart">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                    <th>Xóa</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Tổng</td>
+                    <td id="total-price">0</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <button onclick="updateCart()">Cập nhật giỏ hàng</button>
+        <button onclick="clearCart()">Xóa giỏ hàng</button>
+
+        <script src="js/ex01.js"></script>
+    </body>
+</html>
