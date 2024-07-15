@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.play-btn {
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.player {
+    align-items: center;
+    gap: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.progress-bar {
+    cursor: pointer;
+    background: gray;
+    width: 100%;
+    height: 10px;
+    position: relative;
+}
+
+.progress-bar .progress {
+    background: red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.progress-bar .progress span {
+    cursor: pointer;
+    background: #8a2be2;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    display: block;
+    position: absolute;
+    top: -1.5px;
+    right: 0;
+    translate: 50%;
+}
+
+.progress-bar .timer {
+    color: #fff;
+    background: #000;
+    font-size: 0.5rem;
+    display: none;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    translate: -50%;
+}
+
+.open-karaoke {
+    text-align: center;
+}
+
+.open-karaoke button {
+    color: #fff;
+    cursor: pointer;
+    background: #8a2be2;
+    border: 0;
+    padding: 5px 15px;
+}
+
+.karaoke {
+    color: #fff;
+    background: #892be2;
+    padding: 15px;
+    transition: translate 0.4s;
+    position: fixed;
+    inset: 0;
+    translate: 0 100vh;
+}
+
+.karaoke.show {
+    translate: 0;
+}
+
+.karaoke .karaoke-header {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.karaoke .karaoke-header h2 {
+    font-size: 3rem;
+}
+
+.karaoke .karaoke-header .close {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.karaoke .karaoke-inner {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+}
+
+.karaoke .karaoke-inner p {
+    margin: 30px 0;
+}
+
+.karaoke .karaoke-inner .word {
+    margin: 0 10px;
+    position: relative;
+}
+
+.karaoke .karaoke-inner .word span {
+    transition: width linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.karaoke .player-karaoke {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*# sourceMappingURL=index.fc06c4f1.css.map */
