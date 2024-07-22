@@ -7,6 +7,15 @@ var currentIndex = 0
 var dropPosition = null
 
 // create index
+function clearListItems() {
+    var listItems = document.querySelectorAll(".list-item")
+    listItems.forEach((item) => {
+        item.textContent = item.textContent
+            .replace(/^Module \d+: /, "")
+            .replace(/^Bài \d+: /, "")
+    })
+}
+
 function updateModules() {
     var listItems = document.querySelectorAll(".list-item")
     var moduleCount = 1
@@ -27,7 +36,6 @@ function updateLessons() {
     listItems.forEach(function (item) {
         if (item.classList.contains("active")) {
             moduleIndex++
-            lessonCount = 1
         } else {
             item.textContent = `Bài ${lessonCount}: ${item.textContent}`
             lessonCount++
@@ -36,6 +44,7 @@ function updateLessons() {
 }
 
 function updateListItems() {
+    clearListItems()
     updateModules()
     updateLessons()
 }
@@ -90,6 +99,7 @@ document.addEventListener("dragend", function (e) {
         })
         draggedItem = null
         draggedItems = []
+        updateListItems()
     }
 })
 
