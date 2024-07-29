@@ -3,60 +3,16 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Doc Editor</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
+        <title>Get Link Download</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/ex01.css" />
     </head>
     <body>
-        <div class="editor">
-            <h1 class="editor-heading">Doc Editor</h1>
-            <hr />
-            <div class="toolbar">
-                <div class="file-panel">
-                    <button class="file-button" onclick="saveAsPDF()">
-                        File <i class="fa-solid fa-angle-down"></i>
-                    </button>
-                    <input type="text" placeholder="untitled" id="filename" />
-                </div>
-                <div class="format-panel">
-                    <button onclick="formatDoc('bold')" class="format-button">
-                        <b>b</b>
-                    </button>
-                    <button
-                        onclick="formatDoc('underline')"
-                        class="format-button"
-                    >
-                        <u>u</u>
-                    </button>
-                    <button onclick="formatDoc('italic')" class="format-button">
-                        <i>i</i>
-                    </button>
-                    <input
-                        type="color"
-                        id="colorPicker"
-                        onchange="changeTextColor()"
-                        class="color-picker"
-                    />
-                </div>
-            </div>
-            <div
-                id="editor-content"
-                contenteditable="true"
-                spellcheck="false"
-            ></div>
-            <div class="status">
-                <span id="charCount">Số kí tự: 0</span>
-                <span id="wordCount">Số từ: 0</span>
-            </div>
+        <div class="container">
+            <h1>GET LINK</h1>
+            <div id="countdown">5</div>
+            <button id="getLinkBtn" disabled>Get Link</button>
         </div>
         <script src="js/ex01.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
     </body>
 </html>
